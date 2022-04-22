@@ -44,7 +44,7 @@ List<Student> students = new ArrayList<>();
                 .sorted((s1, s2) -> - s1.getCourseList().size() + s2.getCourseList().size())
                 .limit(3)
                 .collect(Collectors.toList()));
-
+        // 3
         Course course = new Course("Java");
         System.out.println(students.stream()
                 .filter(s -> s.getCourseList().contains(course))
